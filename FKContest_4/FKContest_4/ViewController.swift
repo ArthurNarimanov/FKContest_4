@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     private var data: [Model] = []
     private lazy var tableView: UITableView = {
-        let table = UITableView()
+        let table = UITableView(frame: .zero, style: .insetGrouped)
         table.translatesAutoresizingMaskIntoConstraints = false
         table.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
         table.delegate = self
